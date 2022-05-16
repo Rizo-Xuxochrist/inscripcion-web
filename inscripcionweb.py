@@ -98,17 +98,17 @@ def consulta_datos():
 app.add_url_rule('/tool', 'webio_view', webio_view(carga_datos),
             methods=['GET', 'POST', 'OPTIONS'])  # need GET,POST and OPTIONS methods
 
-"""
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--port", type=int, default=8080)
     args = parser.parse_args()
 
     start_server(carga_datos, port=args.port)
-"""
 
 
-app.run(host='localhost', port=80)   
+
+#app.run(host='localhost', port=80)   
 
 #if __name__ == '__main__':
     
